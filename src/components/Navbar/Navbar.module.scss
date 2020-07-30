@@ -1,0 +1,38 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  height: 55px;
+
+  .title{
+    color: rgb(51, 50, 50);
+    font-size: 40px;
+    margin-right: 40px;
+  }
+  
+  .list{
+    display: flex;
+
+    &__item{
+      padding: 8px 16px;
+      transition: all .2s;
+      cursor: pointer;
+      border-radius: 10px;
+      height: max-content;
+
+      p{
+        color: #8505db;
+        transition: all .2s;
+        line-height: 25px;
+      }
+      
+      &:hover{
+        background: lighten(#efebf9, 20%);
+      }
+      }
+
+    .active{
+      background: lighten(#efebf9, 20%);
+    }
+    }
+}
